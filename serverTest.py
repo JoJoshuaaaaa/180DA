@@ -1,7 +1,7 @@
-import socker
-serv= socket.socket(socker.AF_INET, socket.SOCK_STREAM)
+import socket
+serv= socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-serv.bind(('0.0.0.0',8080))
+serv.bind(('172.20.10.13',8080))
 serv.listen(5)
 while True:
 	conn, addr=serv.accept()
